@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashok Vatika: Register</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/f1045cddcf.js" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Nunito Sans', sans-serif;
+    }
+
+    /* Navbar */
+    body::before{
+    display: block;
+    content: "";
+    height:60px
+}
+@media(min-width:768px){
+    .news-input{
+        width: 50%;
+    }
+}
+      .navbar{
+        font-size: 20px;
+        background-color: #132C33;
+      }
+
+      .navbar-brand{
+        font-size: 30px;
+        font-weight: bolder;
+      }
+
+      li .nav-link {
+        color:white;
+        font-weight:bold;
+      }
+
+      .nav-link:hover{
+        color:#51C4D3;
+      }
+
+
+      li{
+        padding-right:20px;
+      }
+
+      .icon-nav{
+        color:white;
+        padding-left:5px;
+        vertical-align:middle;
+      }
+
+      .icon-nav:hover{
+        color:#51C4D3;
+      }
+
+      .dropdown-menu{
+        background-color:#132C33;
+      }
+
+      .dropdown-item{
+        color:white;
+        font-size:18px;
+        font-weight:bold;
+      }
+
+      .dropdown-item:hover{
+        color:#51C4D3;
+        background-color:#132C33;
+      }
+
+            .navbar-toggler-icon{
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,225,225, 1)' stroke-width='1' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+      }
+
+      /* responsive navbar*/
+      @media (max-width: 768px) {
+        .navbar-collapse {
+          position: fixed;
+          top: 54px;
+          left: 0;
+          padding-left: 10px;
+          padding-right: 10px;
+          padding-bottom: 15px;
+          height: 100%;
+          background-color: #132c33ec;
+          text-align: justify;
+          -ms-text-align-last: left;
+          text-align-last: left;
+          letter-spacing: 0.1rem;
+          line-height: 6vh;
+      }
+
+      .home .navicon{
+        display: inline;
+      }
+      .navbar-collapse.collapsing {
+          height: 100%;
+          left: -80%;
+          transition: height 0s ease;
+      }
+
+      .navbar-collapse.show {
+          height: 100%;
+          left: 0;
+          transition: left 400ms ease-in-out;
+      }
+
+      .navbar-toggler.collapsed ~ .navbar-collapse {
+          transition: left 400ms ease-in;
+      }
+
+      .dropdown-item{
+        color:white;
+        font-size:18px;
+        font-weight:bold;
+      }
+      }
+
+      .header{
+          background-color:#126E82;
+          color: white; font-size: 20px;
+      }
+/*End of Navbar */
+
+.container1{
+    max-width:600px;
+    margin:auto;
+    box-sizing:border-box;
+    padding:40px;
+    color:black;
+    margin-top:60px;
+    margin-bottom: 20px;
+    background-color: rgba(216,227,231,0.2);
+    border: 1px solid #D8E3E7;
+    box-shadow: 0 2px 10px #1a1a1a;
+}
+
+    .user-details .input-box{
+      margin-top:20px;
+    }
+
+    .user-details .input-box input{
+      width: 100%;
+      height: 40px;
+      outline:none;
+      border:1px solid #132C33;
+      border-radius: 5px;
+      font-size: 17px;
+      font-weight: bold;
+    }
+
+    input{
+      padding:10px;
+      color:#126E82;
+    }
+
+    span{
+      font-size:20px;
+      font-weight:bold;
+    }
+
+    .icon{
+      font-size: 25px;
+      padding-right: 15px;
+      color: #126E82;
+      }
+
+    .btn{
+  width: 100%;
+  padding:5px; 
+  border:2px solid #126E82;
+  background:#126E82;
+  border-radius: 20px;
+  color: white;
+  font-size: 25px;
+}
+
+.btn:hover{
+  background-color:rgba(18,110,130,0.5);
+  color: white;
+}
+
+/*Responsive*/
+@media (max-width: 575px) {
+.container1{
+    max-width:400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding:20px;
+  }
+}
+
+/*Footer*/
+#social-icons{
+	background: #fff;
+	text-align: center;
+	padding: 50px 0 20px 0;
+	margin-top: 50px;
+	}
+
+#social-icons a{
+	display: inline-block;
+	padding: 5px;
+	margin: 0px 5px;
+	font-size: 40px;
+	border-radius: 5px;
+	transition: transform 0.5s ease, color 0.5s ease
+	}
+
+#social-icons a:hover{
+	transform: translateY(-20px);
+	}
+
+.facebook{
+	color: #3b5998;
+	}
+
+.linkedin{
+	color: #0072b1;
+}
+
+.whatsapp{
+	color: #25D366;
+	}
+
+.footer section{
+	text-align: center;
+	padding-bottom: 1px;
+	height: 150px;
+	}
+
+.footer .text{
+	text-align: center;
+	color: #000;
+	padding-top: 5px;	
+}
+/*Responsive footer*/
+@media (max-width: 768px){
+  .footer{
+    display: none;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-gradient navbar-dark py-3 fixed-top">
+    <div class="container">
+        <div class="logo">
+            
+            <ul class="navbar-nav" id="navlogo">
+              <li class="nav-item">
+                  <a href="#index" class="navbar-brand">
+                    <img src="/static/img/logo.jpeg" alt="logo" title="Ashok Vatika" style="height:40px;" class="img-fluid rounded-pill"/>
+                  </a>
+                 
+                    <a class="navbar-brand text-white" href="">
+                    Ashok Vatika
+                    </a>
+                  
+              </li>
+          </ul>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <span class="class-toggler-icon"><img src="/Educate/img/white-click.png" alt="" class="">
+            </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-items"><a href="/" class="nav-link text-white">Home</a></li>
+                <li class="nav-items"><a href="about" class="nav-link text-white">About</a></li>
+                <li class="nav-items"><a href="categories.html" class="nav-link text-white">Categories</a></li>
+                <li class="nav-items"><a href="/login" class="nav-link text-white">Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+ <!--Sign up form-->
+   <div class="container1">
+    <div class="form-header blue accent-1">
+        <h1 style="text-align: center; color:#126E82 ;"><b>Register</b></h1>
+    </div>
+     <form method="post">
+      {% csrf_token %}
+      <div class="user-details">
+        {% for field in form %}
+      <p>
+       <div class="input-box">
+        <i class="fas fa-user-edit icon"></i>
+        <span class="details">{{ field.label_tag }}</span><br>
+        {{ field }}
+       </div>
+        {% if field.help_text %}
+        <small style="color: #132C33;">{{ field.help_text }}</small>
+        {% endif %}
+        {% for error in field.errors %}
+      <p style="color: red">{{ error }}</p>
+      {% endfor %}
+      </p>
+      {% endfor %}
+      </div>
+      <div class="text-center mt-4">
+          <button class="btn "><b>Register</b></button>
+      </div>
+    </form>
+   </div>
+
+<!-- Footer-->
+	<footer class="footer">
+		<!-- Social Icons -->
+		<section id="social-icons">
+				<a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook facebook"></i></a>
+        
+        <a href="https://wa.me/7304129121" target="_blank"><i class="fab fa-whatsapp whatsapp"></i></a>
+		</section>
+		<!-- End of Social Icons setion-->
+
+		<div class="section-center">
+			<p class="text">
+				&copy; <span>2021 All rights reserved</span>
+			</p>
+		</div>	
+	</footer> 
+<!-- End of Footer -->s
+</body>
+
+</html>

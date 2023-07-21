@@ -1,0 +1,658 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Health & Fitness: Home</title>
+    <link href="//fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style-starter.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+   
+</head>
+
+<body>
+    <header id="site-header" class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg stroke">
+    
+              <a class="navbar-brand" href="#index.html">
+                <img src="static/img/logo.png" alt="logo" title="Health & Fitness" style="height:40px;" class="img-fluid rounded-pill"/>
+              </a>
+                <h1><a class="navbar-brand" href="index.html">
+                        Health & Fitness
+                </a></h1>
+                <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse" -->
+                    data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                    </span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <nav class="mr-auto ml-lg-5"></nav>
+                    <nav class="mr-auto ml-lg-5"></nav>
+                    <nav class="mr-auto ml-lg-5"></nav>
+                    <nav class="mr-auto ml-lg-5"></nav>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://127.0.0.1:7000/">Food</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://localhost:8000/service">Fitness</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link d" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">Account<span class="fa fa-chevron-circle-down ml-2" aria-hidden="true"></span>
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              {%  if user.is_authenticated%}
+                              <li><a class="dropdown-item" href="myaccount">MyAccount</a></li>
+                              <li><a class="dropdown-item" href="index.html">Logout</a></li>
+                              {% else %}
+                              <li><a class="dropdown-item" href="login.html"><span style="color:#1cbd37;">Login</span></a>
+                              </li>
+                              <li><a class="dropdown-item" href="signup.html">Register</a></li>
+                              {% endif %}
+                          </ul>
+                      </li>
+    
+                    </ul>
+                </div>
+    
+                <!-- toggle switch for light and dark theme -->
+    
+                <div class="pull-right">
+                    <nav class="navigation">
+                        <div class="theme-switch-wrapper">
+                            <label class="theme-switch" for="checkbox">
+                                <input type="checkbox" id="checkbox">
+                                <div class="mode-container py-1">
+                                    <i class="gg-sun"></i>
+                                    <i class="gg-moon"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </nav>
+                </div>
+                <!-- //toggle switch for light and dark theme -->
+            </nav>
+        </div>
+    </header>
+    <section class="w3l-main-slider" id="home">
+        <div class="companies20-content">
+            <div class="owl-one owl-carousel owl-theme">
+                <div class="item">
+                    <li>
+                        <div class="slider-info banner-view bg bg2" style="background-image: url(../static/img/banner1.jpeg);">
+                            <div class="banner-info">
+                                <div class="container">
+                                    <div class="banner-info-bg">
+                                        <h5>A Great Place for Fitness Lovers</h5>
+                                        <!-- <p class="mt-4 pr-lg-4">Choose from over 100 plants with new
+                                            Category</p> -->
+                                        <!-- <a class="btn btn-style btn-primary mt-xl-5 mt-4 mr-2" href="http://127.0.0.1:8000/service/"> Get
+                                            Started <span class="fa fa-chevron-right ml-2"
+                                                aria-hidden="true"></span></a> -->
+                                        <a class="btn btn-style btn-light mt-xl-5 mt-4" href="http://127.0.0.1:8000/service/">Get Started<span class="fa fa-chevron-right ml-2"
+                                                aria-hidden="true"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+                <div class="item">
+                    <li>
+                        <div class="slider-info  banner-view banner-top1 bg bg2" style="background-image: url(../static/img/banner2.jpeg);">
+                            <div class="banner-info">
+                                <div class="container">
+                                    <div class="banner-info-bg">
+                                        <h5>A Great Place for Food Lovers</h5>
+                                        <!-- <p class="mt-4 pr-lg-4">Choose from over 100 plants with new
+                                            Category</p> -->
+                                        <!-- <a class="btn btn-style btn-primary mt-xl-5 mt-4 mr-2" href="Fitness.html"> Get
+                                            Started <span class="fa fa-chevron-right ml-2"
+                                                aria-hidden="true"></span></a> -->
+                                        <a class="btn btn-style btn-light mt-xl-5 mt-4" href="http://127.0.0.1:7000/">Get Started<span class="fa fa-chevron-right ml-2"
+                                                aria-hidden="true"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+                <div class="item">
+                    <li>
+                        <div class="slider-info banner-view banner-top2 bg bg2" style="background-image: url(../static/img/banner3.jpeg);">
+                            <div class="banner-info">
+                                <div class="container">
+                                    <div class="banner-info-bg">
+                                        <h5>A Great Place for Fitness Lovers</h5>
+                                        <!-- <p class="mt-4 pr-lg-4">Choose from over 100 plants with new
+                                            Category</p> -->
+                                        <!-- <a class="btn btn-style btn-primary mt-xl-5 mt-4 mr-2" href="Fitness.html"> Get
+                                            Started <span class="fa fa-chevron-right ml-2"
+                                                aria-hidden="true"></span></a> -->
+                                        <a class="btn btn-style btn-light mt-xl-5 mt-4" href="http://127.0.0.1:8000/service/">Get Started<span class="fa fa-chevron-right ml-2"
+                                                aria-hidden="true"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+                <div class="item">
+                    <li>
+                        <div class="slider-info banner-view banner-top3 bg bg2" style="background-image: url(../static/img/banner4.jpeg);">
+                            <div class="banner-info">
+                                <div class="container">
+                                    <div class="banner-info-bg">
+                                        <h5>A Great Place for Food Lovers</h5>
+                                        <!-- <p class="mt-4 pr-lg-4">Choose from over 100 plants with new
+                                            Category</p> -->
+                                        <!-- <a class="btn btn-style btn-primary mt-xl-5 mt-4 mr-2" href="Fitness.html"> Get
+                                            Started <span class="fa fa-chevron-right ml-2"
+                                                aria-hidden="true"></span></a> -->
+                                        <a class="btn btn-style btn-light mt-xl-5 mt-4" href="http://127.0.0.1:7000/">Get Started<span class="fa fa-chevron-right ml-2"
+                                                aria-hidden="true"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+            </div>
+            <div class="w3l-banner-grids">
+                <div class="bangrids-inn">
+                    <div class="banhny-grid-1">
+                        <div class="banhny-grid-icon">
+                            <span class="fa fa-leaf"></span>
+                        </div>
+                        <div class="banhny-grid-right-info">
+                            <h6><a href="http://127.0.0.1:7000/">Food</a></h6>
+                            <p>Eat well to live well.</p>
+                        </div>
+                    </div>
+                    <div class="banhny-grid-1">
+                        <div class="banhny-grid-icon">
+
+                            <span class="fa fa-bicycle"></span>
+
+                        </div>
+                        <div class="banhny-grid-right-info">
+                            <h6><a href="http://127.0.0.1:8000/service/">Fitness</a></h6>
+                            <p>Fitness regularly to boost your physical and mental health..</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- /main-slider -->
+    <!-- //banner section -->
+    <!-- /content-1-->
+    <div class="content-1 py-5">
+        <div class="container py-md-5">
+            <div class="row content-1-grids">
+                <div class="col-lg-4 content-1-left forms-25-info">
+                    <div class="header-title">
+                        <span class="sub-title">About Plants</span>
+                        <h3 class="hny-title">Let's pass it on stronger, better, and healthier</h3>
+                     
+                    </div>
+                </div>
+                <div class="col-lg-4 content-1-right pl-lg-5 mt-lg-0 mt-4">
+                    <p class="">Nourish your body with wholesome, nutrient-rich foods that provide the fuel you need to live a healthy and vibrant life.
+                    </p>
+                </div>
+                <div class="col-lg-4 content-1-right pl-lg-5 mt-lg-0 mt-4">
+                    <p class="">Embrace the power of movement and make physical activity a cornerstone of your daily routine, 
+                        to strengthen your body, improve your mood, and enhance your overall well-being.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //content-1-->
+    <section class="w3l-bottom-grids-6 py-5" id="features">
+        <div class="container py-lg-5 py-md-4">
+            <div class="grids-area-hny main-cont-wthree-fea row">
+                <!-- /feature-left-->
+                <div class="col-md-6 grids-feature mt-4">
+                    <div class="area-box">
+                        <div class="row">
+                            <div class="col-sm-2 icon">
+                                <span class="fa fa-leaf"></span>
+                            </div>
+                            <div class="col-sm-10 area-box-info">
+                                <h4><a href="http://127.0.0.1:7000/" class="title-head">Food Recommendation</a></h4>
+                                <p class="mt-3">
+                                    Fuel your body with wholesome, nutrient-dense foods and make healthy eating a priority. Aim for a balanced diet that includes plenty of fruits, vegetables, whole grains, lean proteins, and healthy fats, and limit processed foods, added sugars, and saturated fats. Listen to your body, pay attention to how different foods make you feel, and make changes as needed to support your health and wellness goals.
+                                </p>
+                                <a class="btn btn-primary btn-style mt-4" href="http://127.0.0.1:7000/">Click Here<span class="fa fa-chevron-right ml-2" aria-hidden="true"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 grids-feature mt-4">
+                    <div class="area-box">
+                        <div class="row">
+                            <div class="col-sm-2 icon">
+                                <span class="fa fa-money"></span>
+                            </div>
+                            <div class="col-sm-10 area-box-info">
+                                <h4><a href="http://127.0.0.1:8000/service/" class="title-head">Fitness Trainer</a></h4>
+                                <p class="mt-3">Make physical activity a part of your daily routine and strive to find an Fitness you enjoy. Aim for at least 30 minutes of moderate-intensity activity most days of the week, and consider incorporating strength training, flexibility, and balance exercises as well. Mix up your routine to challenge your body in different ways, and don't be afraid to try new activities and hobbies that get you moving</p>
+                                <a class="btn btn-primary btn-style mt-4" href="http://127.0.0.1:8000/service/">Click Here<span class="fa fa-chevron-right ml-2" aria-hidden="true"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //bottom-grids--><i class="far fa-hand-holding-usd"></i>
+
+    <!-- middle -->
+    <div class="middle py-5">
+        <div class="container pt-lg-2 pb-lg-4 py-4">
+            <div class="welcome-left text-center py-lg-4">
+                <h3 class="hny-title">"You are what you eat and how you move, so nourish your body and stay active to lead a healthy and fulfilling life."</h3>
+                <div class="middle-buttons pb-5">
+                    <a href="about.html" class="btn btn-style btn-light mt-sm-5 mt-4 mr-2">Read More <span
+                            class="fa fa-chevron-right ml-2" aria-hidden="true"></span></a>
+                    <a href="contact.html" class="btn btn-style btn-primary mt-sm-5 mt-4">Contact Us <span
+                            class="fa fa-chevron-right ml-2" aria-hidden="true"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //middle -->
+    <!-- stats -->
+    <!-- <section class="w3_stats py-lg-0 py-5" id="stats">
+        <div class="container">
+            <div class="w3-stats">
+                <div class="row">
+                    <div class="col-md-3 col-6 mt-md-0 mt-5">
+                        <div class="counter">
+                            <span class="fa fa-leaf"></span>
+                            <div class="timer count-title count-number mt-3" data-to="{{types}}" data-speed="5"></div>
+                            <p class="count-text">Types of Plants</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mt-md-0 mt-5">
+                        <div class="counter">
+                            <span class="fa fa-list"></span>
+                            <div class="timer count-title count-number mt-3" data-to="{{count}}" data-speed="1">       </div>
+                            <p class="count-text ">Successfull Login</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mt-md-0 mt-5">
+                        <div class="counter">
+                            <span class="fa fa-smile-o"></span>
+                            <div class="timer count-title count-number mt-3" data-to="70" data-speed="1"></div>
+                            <p class="count-text">Successful deliveries</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mt-md-0 mt-5">
+                        <div class="counter">
+                            <span class="fa fa-users"></span>
+                            <div class="timer count-title count-number mt-3" data-to="40" data-speed="1"></div>
+                            <p class="count-text">Number of Donations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- <section class="w3l-blogpost-content py-5">
+        <div class="container py-md-5">
+            <div class="header-title mb-md-5 mt-4">
+                <span class="sub-title">Latest Posts</span>
+                <h3 class="hny-title text-left">Our Blog Posts</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 item">
+                    <div class="card">
+                        <div class="card-header p-0 position-relative">
+                            <a href="blog-single.html">
+                                <img class="card-img-bottom d-block radius-image-full" src="/static/img/ab8.jpg" alt="Card image cap">
+                            </a>
+                        </div>
+                        <div class="card-body blog-details">
+                            <a href="blog-single.html" class="blog-desc">How to grow plants from kinds of seeds.
+                            </a>
+                            <div class="author align-items-center">
+                                <img src="/static/img/admin.jpg" alt="" class="img-fluid rounded-circle">
+                                <ul class="blog-meta">
+                                    <li>
+                                        <a href="#">Isabella ava</a> 
+                                    </li>
+                                    <li class="meta-item blog-lesson">
+                                        <span class="meta-value"> Jan 13, 2018 </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-md-0 mt-4">
+                    <div class="card">
+                        <div class="card-header p-0 position-relative">
+                            <a href="blog-single.html">
+                                <img class="card-img-bottom d-block radius-image-full" src="/static/img/ab2.jpg" alt="Card image cap">
+                            </a>
+                        </div>
+                        <div class="card-body blog-details">
+                            <a href="blog-single.html" class="blog-desc">Did you know that plants make your home healthier and cozier?</a>
+                            <div class="author align-items-center">
+                                <img src="/static/img/admin.jpg" alt="" class="img-fluid rounded-circle">
+                                <ul class="blog-meta">
+                                    <li>
+                                        <a href="#">Charlotte mia</a> 
+                                    </li>
+                                    <li class="meta-item blog-lesson">
+                                        <span class="meta-value"> Nov 02, 2019 </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-md-0 mt-4">
+                    <div class="card">
+                        <div class="card-header p-0 position-relative">
+                            <a href="blog-single.html">
+                                <img class="card-img-bottom d-block radius-image-full" src="/static/img/ab6.jpg" alt="Card image cap">
+                            </a>
+                        </div>
+                        <div class="card-body blog-details">
+                            <a href="blog-single.html" class="blog-desc">What kind of fertilizers are sutaible for plants inside Home.
+                            </a>
+                            <div class="author align-items-center">
+                                <img src="/static/img/admin.jpg" alt="" class="img-fluid rounded-circle">
+                                <ul class="blog-meta">
+                                    <li>
+                                        <a href="#">Elizabeth</a> 
+                                    </li>
+                                    <li class="meta-item blog-lesson">
+                                        <span class="meta-value"> Aug 23, 2020 </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="readhny-btm text-center mx-auto mt-md-4">
+                    <a class="btn btn-primary btn-style mt-md-5 mt-4" href="blogs">Read More <span
+                            class="fa fa-chevron-right ml-2" aria-hidden="true"></span></a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!--//blog-posts-->
+    <!--/w3l-newsletter-->
+    <section class="w3l-newsletter">
+        <div class="form-25-main py-5">
+            <div class="container py-lg-5">
+                <div class="forms-25-info">
+                    <div class="header-title mb-md-5 mt-4">
+                        <span class="sub-title">Subscribe to our Newsletter</span>
+                        <h1 class="nhy-title text-left">Join our Community</h1>
+                    </div>
+                    <form action="#" method="post" class="signin-form mt-4 mb-2">
+                        <div class="forms-gds">
+                            <input type="text" name="" placeholder="Name" required />
+                            <input type="email" name="" placeholder="Email" required />
+                            <button class="btn btn-style btn-primary">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--//w3l-newsletter-->
+    <!-- footer -->
+    <section class="w3l-footer-29-main">
+        <div class="footer-29 py-5">
+            <div class="container py-lg-4">
+                <div class="row footer-top-29">
+                    <div class="col-lg-4 col-md-6 col-sm-7 footer-list-29 footer-1 pr-lg-5">
+                        <div class="footer-logo mb-3">
+                            <a class="navbar-brand" href="index.html">Health&Fitness</a>
+                        </div>
+                        <p>At Health&Fitness, we firmly believe that we can change</p>
+                        <div class="main-social-footer-29 mt-4">
+                            <a href="#facebook" class="facebook"><span class="fa fa-facebook"></span></a>
+                            <a href="#instagram" class="instagram"><span class="fa fa-instagram"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-5 col-6 footer-list-29 footer-2 mt-sm-0 mt-5">
+
+                        <ul>
+                            <h6 class="footer-title-29">Useful Links</h6>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="http://127.0.0.1:7000/">Food</a></li>
+                            <li><a href="http://127.0.0.1:8000/service/"> Fitness</a></li>
+                            <li><a href="contact.html">Contact us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-7 footer-list-29 footer-4 mt-lg-0 mt-5">
+                        <h6 class="footer-title-29">Contact Info </h6>
+                        <p><strong>Address :</strong> Health & Fitness, 343 Honey Avenue street, Mumbai, Maharashtra, India- 400042.</p>
+                        <p class="my-2"><strong>Phone :</strong> <a href="tel:+19 9234567909">+19 9234567909</a></p>
+                        <p><strong>Email :</strong> <a href="mailto:Health&Fitness@gmail.com">Health&Fitness@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //footer -->
+  
+    <!-- copyright -->
+    <section class="w3l-copyright">
+        <div class="container">
+            <div class="row bottom-copies">
+                <p class="col-lg-8 copy-footer-29">© 2023 Health&Fitness All rights reserved.</p>
+  
+                <div class="col-lg-4 footer-list-29">
+                    <ul class="d-flex text-lg-right justify-content-center mt-lg-0 mt-3">
+                        <li class="mx-lg-5 mx-md-4 mx-3"><a href="#privacymy-lg-0 my-4">Privacy Policy</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                    </ul>
+                </div>
+  
+            </div>
+        </div>
+
+        <!-- move top -->
+        <button onclick="topFunction()" id="movetop" title="Go to top">
+            &#10548;
+        </button>
+        <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("movetop").style.display = "block";
+                } else {
+                    document.getElementById("movetop").style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+        <!-- /move top -->
+    </section>
+    <!-- //copyright -->
+
+    <script src="/static/js/jquery-3.3.1.min.js"></script> <!-- Common jquery plugin -->
+
+    <script src="/static/js/theme-change.js"></script><!-- theme switch js (light and dark)-->
+
+    <script src="/static/js/owl.carousel.js"></script>
+    <!-- script for banner slider-->
+    <script>
+        $(document).ready(function () {
+            $('.owl-one').owlCarousel({
+                loop: true,
+                margin: 0,
+                nav: false,
+                responsiveClass: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplaySpeed: 1000,
+                autoplayHoverPause: false,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false
+                    },
+                    480: {
+                        items: 1,
+                        nav: false
+                    },
+                    667: {
+                        items: 1,
+                        nav: true
+                    },
+                    1000: {
+                        items: 1,
+                        nav: true
+                    }
+                }
+            })
+        })
+    </script>
+    <!-- //script -->
+    <!-- magnific popup -->
+    <script src="/static/js/jquery.magnific-popup.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.popup-with-zoom-anim').magnificPopup({
+                type: 'inline',
+
+                fixedContentPos: false,
+                fixedBgPos: true,
+
+                overflowY: 'auto',
+
+                closeBtnInside: true,
+                preloader: false,
+
+                midClick: true,
+                removalDelay: 300,
+                mainClass: 'my-mfp-zoom-in'
+            });
+
+            $('.popup-with-move-anim').magnificPopup({
+                type: 'inline',
+
+                fixedContentPos: false,
+                fixedBgPos: true,
+
+                overflowY: 'auto',
+
+                closeBtnInside: true,
+                preloader: false,
+
+                midClick: true,
+                removalDelay: 300,
+                mainClass: 'my-mfp-slide-bottom'
+            });
+        });
+    </script>
+    <!-- //magnific popup -->
+    <!-- /counter-->
+    <script src="/static/js/counter.js"></script>
+    <!-- //counter-->
+    <!-- script for tesimonials carousel slider -->
+    <script>
+        $(document).ready(function () {
+            $("#owl-demo1").owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: false,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false
+                    },
+                    1000: {
+                        items:2,
+                        nav: false,
+                        loop:true
+                    }
+                }
+            })
+        })
+    </script>
+    <!-- //script for tesimonials carousel slider -->
+
+    <!--/MENU-JS-->
+    <script>
+        $(window).on("scroll", function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 80) {
+                $("#site-header").addClass("nav-fixed");
+            } else {
+                $("#site-header").removeClass("nav-fixed");
+            }
+        });
+
+        //Main navigation Active Class Add Remove
+        $(".navbar-toggler").on("click", function () {
+            $("header").toggleClass("active");
+        });
+        $(document).on("ready", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+            $(window).on("resize", function () {
+                if ($(window).width() > 991) {
+                    $("header").removeClass("active");
+                }
+            });
+        });
+    </script>
+    <!--//MENU-JS-->
+
+    <!-- disable body scroll which navbar is in active -->
+    <script>
+        $(function () {
+            $('.navbar-toggler').click(function () {
+                $('body').toggleClass('noscroll');
+            })
+        });
+    </script>
+    <!-- //disable body scroll which navbar is in active -->
+
+    <!--bootstrap-->
+    <script src="/static/js/bootstrap.min.js"></script>
+    <!-- //bootstrap-->
+
+</body>
+
+</html>

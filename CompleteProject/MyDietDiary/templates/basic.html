@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style media="screen">
+    #w,
+    #h {
+      color: #222f3e;
+      text-align: left;
+      font-size: 20px;
+      font-weight: 200;
+      outline: none;
+      border: none;
+      background: none;
+      border-bottom: 1px solid #341f97;
+      width: 200px;
+    }
+    #w:focus,
+    #h:focus {
+      border-bottom: 2px solid #341f97;
+      width: 300px;
+      transition: 0.5s;
+    }
+    #result {
+      color: #341f97;
+    }
+    #btn {
+      font-family: inherit;
+      margin-top: 2.5px;
+      border: none;
+      color: #fff;
+      background-image: linear-gradient(120deg, #27cd61, #27cd61);
+      width: 150px;
+      padding: 10px;
+      border-radius: 15px;
+      outline: none;
+      cursor: pointer;
+    }
+    #btn:hover {
+      box-shadow: 1px 1px 10px #341f97;
+    }
+  </style>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <!-- Option 1: Include in HTML -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    {% load static %}
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/style.css' %}"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="{% static 'images/favicon.png' %}"
+    />
+    <title>Diet Recommender</title>
+  </head>
+
+  <body>
+    <!-- nav start -->
+    <header>
+      <a
+        href="http://localhost:8080/"
+        id="btn"
+        class="text-decoration-none text-center"
+        ><i class="bi bi-house-door-fill"></i> Project Home
+      </a>
+      <a href="/" class="logo">Diet Recommender</a>
+      <ul class="m-0">
+        <li><a href="/" id="btn">Recommender Home</a></li>
+        <li><a href="/dietplanner" id="btn">Diet Planner</a></li>
+        <li><a href="/bodymass" id="btn">Body Fat Calulator</a></li>
+      </ul>
+    </header>
+
+    {% block body %} {% endblock %}
+
+    <footer>
+      <!-- <p>Hello</p> -->
+    </footer>
+  </body>
+</html>

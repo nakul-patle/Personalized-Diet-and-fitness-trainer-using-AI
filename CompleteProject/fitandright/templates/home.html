@@ -1,0 +1,503 @@
+
+    {% extends 'navbar.html' %}
+
+
+    {% block content %}
+    
+    <div class="hero-wrap js-fullheight">
+	    <div class="home-slider owl-carousel js-fullheight">
+	      <div class="slider-item js-fullheight" style="background-image:url(/static/images/bg_1.jpg);">
+	      	<div class="overlay"></div>
+	        <div class="container">
+	          <div class="row no-gutters slider-text align-items-center">
+		          <div class="col-md-7 ftco-animate">
+		          	<div class="text w-100">
+		          		<!-- <h2>Welcome to Health Coach</h2> -->
+			            <h1 class="mb-4">Get in shape faster, live your happy life</h1>
+			            <p><a href="{% url 'service' %}" class="btn btn-primary">Learn more</a> 
+							<!-- <a href="#" class="btn btn-white">Contact us</a> -->
+						</p>
+		            </div>
+		          </div>
+		        </div>
+	        </div>
+	      </div>
+
+
+	      <div class="slider-item js-fullheight" style="background-image:url(/static/images/resize22.jpg);">
+	      	<div class="overlay"></div>
+	        <div class="container">
+	          <div class="row no-gutters slider-text align-items-center justify-content-end">
+		          <div class="col-md-6 ftco-animate">
+		          	<div class="text w-100">
+		          		<!-- <h2>Welcome Health Coach</h2> -->
+			            <h1 style="color: white;" class="mb-4">You can transform health through habit change</h1>
+			            <p><a href="{% url 'service' %}" class="btn btn-primary">Learn more</a> 
+							<!-- <a href="#" class="btn btn-white">Contact us</a> -->
+						</p>
+		            </div>
+		          </div>
+		        </div>
+	        </div>
+	      </div>
+
+		  <div class="slider-item js-fullheight" style="background-image:url(/static/images/resize1.jpg);">
+			<div class="overlay"></div>
+		  <div class="container">
+			<div class="row no-gutters slider-text align-items-center">
+				<div class="col-md-7 ftco-animate">
+					<div class="text w-100">
+						<h2>A Fresh approach to healthy life</h2>
+					  <h1 class="mb-4 color-white">Unlock your potential with good nutrition</h1>
+					  <p><a href="{% url 'service' %}" class="btn btn-primary">Learn more</a> 
+						  <!-- <a href="#" class="btn btn-white">Contact us</a> -->
+					  </p>
+				  </div>
+				</div>
+			  </div>
+		  </div>
+		</div>
+
+	    </div>
+	  </div>
+		
+    <section class="ftco-section ftco-services">
+    	<div class="container">
+    		<div class="row">
+          <div class="col-md-4 d-flex services align-self-stretch px-4 ftco-animate">
+            <div class="d-block services-wrap text-center">
+              <div class="img" style="background-image: url(/static/images/services-1.jpg);"></div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">Exercise Program</h3>
+                <p>Good things come to those who sweat.The pain you feel today, will be the strenght you feel tomorrow.</p>
+                <p><a href="{% url 'coach' %}" class="btn btn-primary btn-outline-primary">Read more</a></p>
+              </div>
+            </div>      
+          </div>
+          <div class="col-md-4 d-flex services align-self-stretch px-4 ftco-animate">
+            <div class="d-block services-wrap text-center">
+              <div class="img" style="background-image: url(/static/images/services-2.jpg);"></div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">Nutrition Plans</h3>
+                <p>Those who think they have no time for healthy eating, will sooner or later have to find time for illness.</p>
+                <p><a href="{% url 'blog' %}" class="btn btn-primary btn-outline-primary">Read more</a></p>
+              </div>
+            </div>    
+          </div>
+          <div class="col-md-4 d-flex services align-self-stretch px-4 ftco-animate">
+            <div class="d-block services-wrap text-center">
+              <div class="img" style="background-image: url(/static/images/services-3.jpg);"></div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">Diet Program</h3>
+                <p>When diet is wrong, medicine is of no use. When diet is correct, medicine is of no need.</p>
+                <p><a href="{% url 'blog' %}" class="btn btn-primary btn-outline-primary">Read more</a></p>
+              </div>
+            </div>      
+          </div>
+        </div>
+    	</div>
+    </section>
+
+    <section class="ftco-section ftco-no-pt ftco-no-pb bg-light">
+			<div class="container">
+				<div class="row no-gutters">
+					<div class="col-md-5 p-md-5 img img-2 mt-5 mt-md-0" style="background-image: url(/static/images/coach-1.jpg);">
+					</div>
+					<div class="col-md-7 wrap-about py-4 py-md-5 ftco-animate">
+	          <div class="heading-section mb-5">
+	          	<div class="pl-md-5">
+		          	<span class="subheading mb-2">Welcome to fitNright</span>
+		            <h2 class="mb-2">Hello! Health Care is a natural way of improving your health</h2>
+	            </div>
+	          </div>
+	          <div class="pl-md-5">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices felis et felis gravida pulvinar. Sed non ultricies mi. Sed mauris tellus, blandit eu sapien ut, tempus molestie velit.</p>
+							<p>Aenean efficitur sodales pellentesque. Aliquam sit amet mauris congue, pretium urna ac, scelerisque massa. Nam elementum, elit sit amet faucibus vulputate, augue dui volutpat purus, quis pulvinar turpis neque eu elit. Morbi convallis ut elit vitae posuere.</p>
+							<div class="founder d-flex align-items-center mt-5">
+								<div class="img" style="background-image: url(/static/images/coach-1.jpg);"></div>
+								<div class="text pl-3">
+									<h3 class="mb-0">Cythia Hunter</h3>
+									<span class="position">Personal Dietitian</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		{%include '_alerts.html' %}
+		<section class="ftco-section ftco-no-pt ftco-no-pb">
+			<div class="container-fluid px-md-0">
+				<div class="row no-gutters">
+					<div class="col-md-3 d-flex align-items-stretch">
+						<div class="consultation w-100 text-center px-4 px-md-5">
+							<h3 class="mb-4">Healthcare Services</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							<a href="#" class="btn-custom">See Services</a>
+						</div>
+					</div>
+					<div class="col-md-6 d-flex align-items-stretch">
+						<div class="consultation consul w-100 px-4 px-md-5">
+							<div class="text-center">
+								<h3 class="mb-4">Free Consultation</h3>
+							</div>
+							<form method="POST" class="appointment-form" method="post" action="{% url 'book-app' %}" >
+								{% csrf_token %}  
+								<div class="row">
+									<div class="col-md-12 col-lg-6 col-xl-4">
+										<div class="form-group">
+											<label class="label" for="fname">First Name</label>
+				    					<input type="text" class="form-control" name="fname" placeholder="First Name">
+				    				</div>
+									</div>
+									<div class="col-md-12 col-lg-6 col-xl-4">
+										<div class="form-group">
+											<label class="label" for="lname">Last Name</label>
+				    					<input type="text" class="form-control" name="lname" placeholder="Last Name">
+				    				</div>
+									</div>
+									<div class="col-md-12 col-lg-6 col-xl-4">
+										<div class="form-group">
+				    					<div class="form-field">
+		          					<div class="select-wrap">
+		                      <div class="icon"><span class="fa fa-chevron-down"></span></div>
+		                      <select name="" id="" class="form-control">
+		                      	<option value="">Services</option>
+		                        <option value="">Services 1</option>
+		                        <option value="">Services 2</option>
+		                      </select>
+		                    </div>
+				              </div>
+				    				</div>
+									</div>
+									<div class="col-md-12 col-lg-6 col-xl-4">
+										<div class="form-group">
+				    					<div class="input-wrap">
+				            		<div class="icon"><span class="ion-md-calendar"></span></div>
+				            		<input type="text" class="form-control appointment_date" placeholder="Date">
+			            		</div>
+				    				</div>
+									</div>
+									<div class="col-md-12 col-lg-6 col-xl-4">
+										<div class="form-group">
+				    					<div class="input-wrap">
+				            		<div class="icon"><span class="ion-ios-clock"></span></div>
+				            		<input type="text" class="form-control appointment_time" placeholder="Time">
+			            		</div>
+				    				</div>
+									</div>
+									<div class="col-md-12 col-lg-6 col-xl-4">
+										<div class="form-group">
+				              <input type="submit" value="Appointment" class="btn btn-white py-2 px-4">
+				            </div>
+									</div>
+								</div>
+		    			</form>
+		    	  </div>
+					</div>
+					<div class="col-md-3 d-flex align-items-stretch">
+						<div class="consultation w-100 text-center px-4 px-md-5">
+							<h3 class="mb-4">Find A Health Expert</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							<a href="#" class="btn-custom">Meet our health coach</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+    <section class="ftco-section testimony-section bg-light">
+      <div class="container">
+        <div class="row justify-content-center pb-5 mb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+          	<span class="subheading mb-3">Testimonies</span>
+            <h2>Happy Users &amp; Feedbacks</h2>
+          </div>
+        </div>
+        <div class="row ftco-animate">
+          <div class="col-md-12">
+            <div class="carousel-testimony owl-carousel">
+				<div class="item">
+                <div class="testimony-wrap d-flex">
+                  <div class="user-img" style="background-image: url(/static/images/person-1.jpg)">
+                  </div>
+                  <div class="text pl-4">
+                  	<span class="quote d-flex align-items-center justify-content-center">
+                      <i class="fa fa-quote-left"></i>
+                    </span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices felis et felis gravida pulvinar.</p>
+                    <p class="name">Pooja</p>
+                   
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap d-flex">
+                  <div class="user-img" style="background-image: url(/static/images/person-2.jpg)">
+                  </div>
+                  <div class="text pl-4">
+                  	<span class="quote d-flex align-items-center justify-content-center">
+                      <i class="fa fa-quote-left"></i>
+                    </span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices felis et felis gravida pulvinar.</p>
+                    <p class="name">Ranbir</p>
+                   
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap d-flex">
+                  <div class="user-img" style="background-image: url(/static/images/person_3.jpg)">
+                  </div>
+                  <div class="text pl-4">
+                  	<span class="quote d-flex align-items-center justify-content-center">
+                      <i class="fa fa-quote-left"></i>
+                    </span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices felis et felis gravida pulvinar.</p>
+                    <p class="name">Arjun</p>
+                   
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap d-flex">
+                  <div class="user-img" style="background-image: url(/static/images/person-3.jpg)">
+                  </div>
+                  <div class="text pl-4">
+                  	<span class="quote d-flex align-items-center justify-content-center">
+                      <i class="fa fa-quote-left"></i>
+                    </span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices felis et felis gravida pulvinar.</p>
+                    <p class="name">Aarya</p>
+                  
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap d-flex">
+                  <div class="user-img" style="background-image: url(/static/images/staff-6.jpg)">
+                  </div>
+                  <div class="text pl-4">
+                  	<span class="quote d-flex align-items-center justify-content-center">
+                      <i class="fa fa-quote-left"></i>
+                    </span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices felis et felis gravida pulvinar.</p>
+                    <p class="name">Nidhi</p>
+                   
+                  </div>
+                </div>
+              </div>
+						</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5 mb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+          	<!-- <span class="subheading mb-3">Other Services</span> -->
+            <h2>How it works?</h2>
+          </div>
+        </div>
+    		<div class="row">
+          <div class="col-md-3 d-flex services align-self-stretch px-4 ftco-animate">
+            <div class="d-block text-center">
+              <div class="icon d-flex justify-content-center align-items-center">
+            		<span class="flaticon-diet"></span>
+              </div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">Follow the program</h3>
+
+              </div>
+            </div>      
+          </div>
+          <div class="col-md-3 d-flex services align-self-stretch px-4 ftco-animate">
+            <div class="d-block text-center">
+              <div class="icon d-flex justify-content-center align-items-center">
+            		<span class="flaticon-workout"></span>
+              </div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">Work for result</h3>
+           
+              </div>
+            </div>    
+          </div>
+          <div class="col-md-3 d-flex services align-self-stretch px-4 ftco-animate">
+            <div class="d-block text-center">
+              <div class="icon d-flex justify-content-center align-items-center">
+            		<span class="flaticon-diet-1"></span>
+              </div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">Eat healthy food</h3>
+               
+              </div>
+            </div>      
+          </div>
+          <div class="col-md-3 d-flex services align-self-stretch px-4 ftco-animate">
+            <div class="d-block text-center">
+              <div class="icon d-flex justify-content-center align-items-center">
+            		<span class="flaticon-first"></span>
+              </div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">Enjoy your life</h3>
+             
+              </div>
+            </div>      
+          </div>
+        </div>
+    	</div>
+    </section>
+
+		<!-- <section class="ftco-section ftco-no-pb bg-light">
+      <div class="container">
+        <div class="row justify-content-center pb-5 mb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+          	<span class="subheading mb-3">Stories</span>
+            <h2>Successfull Stories</h2>
+          </div>
+        </div>
+        <div class="row ftco-animate">
+          <div class="col-md-12">
+          	<div class="carousel-stories owl-carousel">
+							<div class="item">
+								<div class="row justify-content-center">
+									<div class="col-md-11">
+										<div class="stories-wrap d-md-flex">
+											<div class="img" style="background-image: url(/static/images/person-1.jpg);"></div>
+											<div class="text p-4 py-xl-5 px-xl-5 d-flex align-items-center">
+												<div class="desc w-100">
+													<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+													<p class="mb-5">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+													<div class="pt-4">
+														<p class="name mb-0">Joy Smith</p>
+														<span class="position">Client/Manager</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="row justify-content-center">
+									<div class="col-md-11">
+										<div class="stories-wrap d-md-flex">
+											<div class="img" style="background-image: url(/static/images/person-2.jpg);"></div>
+											<div class="text p-4 py-xl-5 px-xl-5 d-flex align-items-center">
+												<div class="desc w-100">
+													<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+													<p class="mb-5">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+													<div class="pt-4">
+														<p class="name mb-0">Rony Smith</p>
+														<span class="position">Client/Messenger</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="row justify-content-center">
+									<div class="col-md-11">
+										<div class="stories-wrap d-md-flex">
+											<div class="img" style="background-image: url(/static/images/person-3.jpg);"></div>
+											<div class="text p-4 py-xl-5 px-xl-5 d-flex align-items-center">
+												<div class="desc w-100">
+													<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+													<p class="mb-5">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+													<div class="pt-4">
+														<p class="name mb-0">John Doe</p>
+														<span class="position">Client</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+		
+		<section class="ftco-intro" style="background-image: url(/static/images/bg_1.jpg);" data-stellar-background-ratio="0.5">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9">
+						<h2>We Provide Free Health Care Consultation</h2>
+						<p class="mb-0">Your Health is Our Top Priority with Comprehensive, Affordable Health.</p>
+						<p></p>
+					</div>
+					<div class="col-md-3 d-flex align-items-center">
+						<p class="mb-0"><a href="{% url 'book-app' %}" class="btn btn-white px-4 py-3">Free Consutation</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+  
+
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center pb-5 mb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h2>Latest news from our blog</h2>
+            <span class="subheading">News &amp; Blog</span>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry align-self-stretch">
+              <a href="{% url 'blog' %}" class="block-20 rounded" style="background-image: url('/static/images/image_1.jpg');">
+              </a>
+              <div class="text mt-3">
+              	<div class="meta mb-2">
+                  <div><a href="#">January 30, 2022</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
+                </div>
+                <h3 class="heading"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry align-self-stretch">
+              <a href="{% url 'blog' %}" class="block-20 rounded" style="background-image: url('/static/images/image_2.jpg');">
+              </a>
+              <div class="text mt-3">
+              	<div class="meta mb-2">
+                  <div><a href="#">January 30, 2022</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
+                </div>
+                <h3 class="heading"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry align-self-stretch">
+              <a href="{% url 'blog' %}" class="block-20 rounded" style="background-image: url('/static/images/image_3.jpg');">
+              </a>
+              <div class="text mt-3">
+              	<div class="meta mb-2">
+                  <div><a href="#">January 30, 2022</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
+                </div>
+                <h3 class="heading"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+		
+
+   {% endblock %}

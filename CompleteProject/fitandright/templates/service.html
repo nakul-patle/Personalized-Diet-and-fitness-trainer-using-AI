@@ -1,0 +1,193 @@
+{% extends 'navbar.html' %} {% block content %}
+
+<section
+  class="hero-wrap hero-wrap-2"
+  style="background-image: url('/static/images/resize33.jpg')"
+  data-stellar-background-ratio="0.5"
+>
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row no-gutters slider-text align-items-end">
+      <div class="col-md-9 ftco-animate pb-5">
+        <p class="breadcrumbs mb-2">
+          <span class="mr-2"
+            ><a href="http://127.0.0.1:8080/"
+              >Home <i class="ion-ios-arrow-forward"></i></a
+          ></span>
+          <span>Fitness <i class="ion-ios-arrow-forward"></i></span>
+        </p>
+        <h1 class="mb-0 bread">Fitness</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<form>
+  {% comment %} {% csrf_token %} {% endcomment %}
+  <section class="ftco-section">
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-md-4 d-flex services align-self-stretch px-4 ftco-animate"
+        >
+          <div class="d-block services-wrap text-center">
+            <div
+              class="img"
+              style="background-image: url(/static/images/s2.png)"
+            ></div>
+            <div class="media-body p-2 mt-3">
+              <h3 class="heading">Push Up</h3>
+              <p>
+                A push-up is a common calisthenics exercise beginning from the
+                prone position. By raising and lowering the body using the arms,
+                push-ups exercise the pectoral muscles, triceps
+              </p>
+              <p>
+                <button
+                  type="submit"
+                  name="pushup"
+                  class="btn btn-primary btn-outline-primary"
+                >
+                  Click!
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-4 d-flex services align-self-stretch px-4 ftco-animate"
+        >
+          <div class="d-block services-wrap text-center">
+            <div
+              class="img"
+              style="background-image: url(/static/images/s1.jpg)"
+            ></div>
+            <div class="media-body p-2 mt-3">
+              <h3 class="heading">Bicep Curl</h3>
+              <p>
+                Place the back of your arm with the dumbbell on the inside of
+                your thigh and place the opposite hand on top of the opposite
+                knee for support. Slowly curl the dumbbell upward as far as
+                possible.
+              </p>
+              <p>
+                <button
+                  type="submit"
+                  name="bicep"
+                  class="btn btn-primary btn-outline-primary"
+                >
+                  Click!
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-4 d-flex services align-self-stretch px-4 ftco-animate"
+        >
+          <div class="d-block services-wrap text-center">
+            <div
+              class="img"
+              style="background-image: url(/static/images/s3.jpg)"
+            ></div>
+            <div class="media-body p-2 mt-3">
+              <h3 class="heading">Pose Estimation</h3>
+              <p>
+                Pose estimation is a computer vision technique to track the
+                movements of a person or an object. This is usually performed by
+                finding the location of key points for the given objects
+              </p>
+              <p>
+                <button
+                  type="submit"
+                  name="posedetect"
+                  class="btn btn-primary btn-outline-primary"
+                >
+                  Click!
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</form>
+<section class="ftco-section bg-light">
+  <div class="container">
+    <div class="row justify-content-center pb-5 mb-3">
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <!-- <span class="subheading mb-3">Other Services</span> -->
+        <h2>How it works?</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div
+        class="col-md-3 d-flex services align-self-stretch px-4 ftco-animate"
+      >
+        <div class="d-block text-center">
+          <div class="icon d-flex justify-content-center align-items-center">
+            <span class="flaticon-diet"></span>
+          </div>
+          <div class="media-body p-2 mt-3">
+            <h3 class="heading">Follow the program</h3>
+            <!-- <p>
+              Even the all-powerful Pointing has no control about the blind
+              texts it is an almost unorthographic.
+            </p> -->
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-md-3 d-flex services align-self-stretch px-4 ftco-animate"
+      >
+        <div class="d-block text-center">
+          <div class="icon d-flex justify-content-center align-items-center">
+            <span class="flaticon-workout"></span>
+          </div>
+          <div class="media-body p-2 mt-3">
+            <h3 class="heading">Work for result</h3>
+            <!-- <p>
+              Even the all-powerful Pointing has no control about the blind
+              texts it is an almost unorthographic.
+            </p> -->
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-md-3 d-flex services align-self-stretch px-4 ftco-animate"
+      >
+        <div class="d-block text-center">
+          <div class="icon d-flex justify-content-center align-items-center">
+            <span class="flaticon-diet-1"></span>
+          </div>
+          <div class="media-body p-2 mt-3">
+            <h3 class="heading">Eat healthy food</h3>
+            <!-- <p>
+              Even the all-powerful Pointing has no control about the blind
+              texts it is an almost unorthographic.
+            </p> -->
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-md-3 d-flex services align-self-stretch px-4 ftco-animate"
+      >
+        <div class="d-block text-center">
+          <div class="icon d-flex justify-content-center align-items-center">
+            <span class="flaticon-first"></span>
+          </div>
+          <div class="media-body p-2 mt-3">
+            <h3 class="heading">Enjoy your life</h3>
+            <!-- <p>
+              Even the all-powerful Pointing has no control about the blind
+              texts it is an almost unorthographic.
+            </p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

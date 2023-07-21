@@ -1,0 +1,9 @@
+Run Landing page project at port 8080 using the command:
+	python manage.py runserver 8080
+
+
+Run MyDietDiary-main at port 7000 using the command:
+	python manage.py runserver 7000
+
+Run fitandright at port 8000 using the command:
+	python manage.py runserver 8000

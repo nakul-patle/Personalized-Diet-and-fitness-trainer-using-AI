@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>H&F: Food</title>
+    <link href="//fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style-starter.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+    <header id="site-header" class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg stroke">
+
+              <a class="navbar-brand" href="#index.html">
+                <img src="static/img/logo.png" alt="logo" title="Health & Fitness" style="height:40px;" class="img-fluid rounded-pill"/>
+              </a>
+                <h1><a class="navbar-brand" href="index.html">
+                        Health & Fitness
+                </a></h1>
+                <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse" -->
+                    data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                    </span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <nav class="mr-auto ml-lg-5"></nav>
+                    <nav class="mr-auto ml-lg-5"></nav>
+                    <nav class="mr-auto ml-lg-5"></nav>
+                    <nav class="mr-auto ml-lg-5"></nav>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="food.html">Food</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Fitness.html">Fitness</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link d" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">Account<span class="fa fa-chevron-circle-down ml-2" aria-hidden="true"></span>
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              {%  if user.is_authenticated%}
+                              <li><a class="dropdown-item" href="myaccount">MyAccount</a></li>
+                              <li><a class="dropdown-item" href="index.html">Logout</a></li>
+                              {% else %}
+                              <li><a class="dropdown-item" href="login.html"><span style="color:#1cbd37;">Login</span></a>
+                              </li>
+                              <li><a class="dropdown-item" href="signup.html">Register</a></li>
+                              {% endif %}
+                          </ul>
+                      </li>
+
+                    </ul>
+                </div>
+
+                <!-- toggle switch for light and dark theme -->
+
+                <div class="pull-right">
+                    <nav class="navigation">
+                        <div class="theme-switch-wrapper">
+                            <label class="theme-switch" for="checkbox">
+                                <input type="checkbox" id="checkbox">
+                                <div class="mode-container py-1">
+                                    <i class="gg-sun"></i>
+                                    <i class="gg-moon"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </nav>
+                </div>
+                <!-- //toggle switch for light and dark theme -->
+            </nav>
+        </div>
+    </header>
+    <!--/header-->
+    <div class="inner-banner">
+        <section class="w3l-breadcrumb">
+            <div class="container">
+                <ul class="breadcrumbs-custom-path">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><span class="fa fa-chevron-right mx-2" aria-hidden="true"></span> Food</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <!-- Food -->
+    <section class="w3l-contact-1 py-5">
+        <div class="contacts-9 py-lg-5 py-md-4">
+            <div class="container">
+                <div class="d-grid contact-view mb-5 pb-lg-5">
+                    <div class="cont-details">
+                        <div class="contactct-fm-text text-left mb-md-5 mb-4">
+                            <div class="header-title mb-md-5 mt-4">
+                                <span class="sub-title">Food </span>
+                                <h3 class="hny-title text-left">Additional information </h3>
+                            </div>
+                            <p>“Good Food means nutritious donate that is healthy, tasty, produced in a nature-friendly way by farmers, fishers folks or donate producers who got a decent price for their product.”</p>
+                            <br/>
+                              <p>  If you are interested in Food Contact Us using below details or Fill out the form with genuine Information.</p>
+                        </div>
+
+                        <div class="cont-top">
+                            <div class="cont-left text-center">
+                                <span class="fa fa-phone"></span>
+                            </div>
+                            <div class="cont-right">
+                                <h6>Phone number</h6>
+                                <p><a href="tel:+19 9234567909">+19 9234567909</a></p>
+                            </div>
+                        </div>
+                        <div class="cont-top margin-up">
+                            <div class="cont-left text-center">
+                                <span class="fa fa-envelope-o"></span>
+                            </div>
+                            <div class="cont-right">
+                                <h6>Send Email</h6>
+                                <p><a href="mailto:digitaledu@mail.com" class="mail">Health&Fitness@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="cont-top margin-up">
+                            <div class="cont-left text-center">
+                                <span class="fa fa-map-marker"></span>
+                            </div>
+                            <div class="cont-right">
+                                <h6>Office Address</h6>
+                                <p class="pr-lg-5">Health&Fitness, 343 Honey Avenue street, Mumbai, Maharashtra, India- 400042.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div >
+                        <img src="/static/img/ab1.jpeg" alt=" Donate " class="radius-image-full img-fluid">
+                      </div>
+                </div>
+                    <div class="map-content-9">
+                        <div class="contactct-fm map-content-9 pl-lg-4">
+                            <div class="contactct-fm-text text-left">
+                                <div class="header-title mb-md-5 mt-4">
+                                    <span class="sub-title">form</span>
+                                    <h3 class="hny-title text-left">Fill out the form.</h3>
+                                </div>
+                            <h2>Fill the details according to Need.</h2>
+                            <br>
+                            <form action="/donate" method='POST' enctype="multipart/form-data">
+                                {% csrf_token %}
+                                <div style="color: red;"> <span class="title">Age *</span></div>
+                                <div class="twice-two">
+                                    <input type="number" name="dage" class="form-control"  id="w3lFName" placeholder="Age" required>
+                                </div>
+                                <div class="twice">
+                                    <span class="title" style="color: red;">Weight in kg *</span>
+                                    <input type="number" name="dweight" class="form-control"  id="w3lFName" placeholder="Weight" required>
+                                </div>
+                                <div><span class="title" style="color: red;">Height in cm*</span>
+                                    <input type="number" name="dheight" class="form-control"  id="w3lFName" placeholder="Height" required>
+                                    <small id="Help" class="form-text text-muted">We'll never share your details with anyone else.</small>
+                                </div>
+                                <!-- <div class="twice-two">
+                                    <input type="number" name="dphone" class="form-control"  id="w3lMobile1"
+                                        placeholder="Mobile1" required>
+                                   
+                                </div> -->
+                                
+                                <div class="">
+                                    <br>
+                                <h4>Fill the Food details</h4>
+                                <br>
+                                <div><span class="title">Food Type</span></div>
+                                <div class="twice-two">
+                                    
+                                    <select name="countplants" class="form-control custom-select mr-sm-2" id="inputState" class="form-control" name="w3l"
+                                    placeholder="Mobile1" required>
+                                        <option selected>Choose your Eating Type...</option>
+                                        <option>Veg</option>
+                                        <option>Non-veg</option>
+                                        </select>
+                                </div>
+                                <!-- <div class="form-group">
+                                    <span class="title" for="FormControl2">Plant Picture</span>
+                                    <input type="file" accept="image/*"  required name="plantsimage" class="form-control-file" id="FormControl2">
+                                </div> -->
+                            </div>
+                                <div class="text-left">
+                                    <button type="submit" class="btn btn-primary btn-style mt-4">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+    </section>
+    <!-- Food -->
+
+
+    <!-- footer -->
+    <section class="w3l-footer-29-main">
+        <div class="footer-29 py-5">
+            <div class="container py-lg-4">
+                <div class="row footer-top-29">
+                    <div class="col-lg-4 col-md-6 col-sm-7 footer-list-29 footer-1 pr-lg-5">
+                        <div class="footer-logo mb-3">
+                            <a class="navbar-brand" href="index.html">Health&Fitness</a>
+                        </div>
+                        <p>At Health&Fitness, we firmly believe that we can change</p>
+                        <div class="main-social-footer-29 mt-4">
+                            <a href="#facebook" class="facebook"><span class="fa fa-facebook"></span></a>
+                            <a href="#instagram" class="instagram"><span class="fa fa-instagram"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-5 col-6 footer-list-29 footer-2 mt-sm-0 mt-5">
+
+                        <ul>
+                            <h6 class="footer-title-29">Useful Links</h6>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="eood.html">Food</a></li>
+                            <li><a href="Fitness.html"> Fitness</a></li>
+                            <li><a href="contact.html">Contact us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-7 footer-list-29 footer-4 mt-lg-0 mt-5">
+                        <h6 class="footer-title-29">Contact Info </h6>
+                        <p><strong>Address :</strong> Health & Fitness, 343 Honey Avenue street, Mumbai, Maharashtra, India- 400042.</p>
+                        <p class="my-2"><strong>Phone :</strong> <a href="tel:+19 9234567909">+19 9234567909</a></p>
+                        <p><strong>Email :</strong> <a href="mailto:Health&Fitness@gmail.com">Health&Fitness@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //footer -->
+  
+    <!-- copyright -->
+    <section class="w3l-copyright">
+        <div class="container">
+            <div class="row bottom-copies">
+                <p class="col-lg-8 copy-footer-29">© 2023 Health&Fitness All rights reserved.</p>
+  
+                <div class="col-lg-4 footer-list-29">
+                    <ul class="d-flex text-lg-right justify-content-center mt-lg-0 mt-3">
+                        <li class="mx-lg-5 mx-md-4 mx-3"><a href="#privacymy-lg-0 my-4">Privacy Policy</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                    </ul>
+                </div>
+  
+            </div>
+        </div>
+  
+        <!-- move top -->
+        <button onclick="topFunction()" id="movetop" title="Go to top">
+            &#10548;
+        </button>
+        <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () {
+                scrollFunction()
+            };
+  
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("movetop").style.display = "block";
+                } else {
+                    document.getElementById("movetop").style.display = "none";
+                }
+            }
+  
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+        <!-- /move top -->
+    </section>
+    <!-- //copyright -->
+    <script src="/static/js/jquery-3.3.1.min.js"></script> <!-- Common jquery plugin -->
+    <script src="/static/js/theme-change.js"></script><!-- theme switch js (light and dark)-->
+    <!--/MENU-JS-->
+    <script>
+        $(window).on("scroll", function () {
+            var scroll = $(window).scrollTop();
+  
+            if (scroll >= 80) {
+                $("#site-header").addClass("nav-fixed");
+            } else {
+                $("#site-header").removeClass("nav-fixed");
+            }
+        });
+  
+        //Main navigation Active Class Add Remove
+        $(".navbar-toggler").on("click", function () {
+            $("header").toggleClass("active");
+        });
+        $(document).on("ready", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+            $(window).on("resize", function () {
+                if ($(window).width() > 991) {
+                    $("header").removeClass("active");
+                }
+            });
+        });
+    </script>
+    <!--//MENU-JS-->
+  
+    <!-- disable body scroll which navbar is in active -->
+    <script>
+        $(function () {
+            $('.navbar-toggler').click(function () {
+                $('body').toggleClass('noscroll');
+            })
+        });
+    </script>
+    <!-- //disable body scroll which navbar is in active -->
+  
+    <!--bootstrap-->
+    <script src="/static/js/bootstrap.min.js"></script>
+    <!-- //bootstrap-->
+  
+  </body>
+  
+  </html>
